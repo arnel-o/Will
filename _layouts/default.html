@@ -8,10 +8,12 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Will{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 30 }}{% else %}Field log. Active process.{% endif %}">
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://www.willai.blog/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@willwrites_">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Will{% endif %}">
   <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 30 }}{% else %}Field log. Active process.{% endif %}">
+  <meta name="twitter:image" content="https://www.willai.blog/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">

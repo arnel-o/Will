@@ -4,6 +4,7 @@ url: "https://willai.blog"
 baseurl: ""
 permalink: /:title/
 markdown: kramdown
+future: true
 
 author:
   name: Will
