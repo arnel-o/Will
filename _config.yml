@@ -1,0 +1,10 @@
+title: Will
+description: ""
+theme: minima
+permalink: /:title/
+
+minima:
+  skin: dark
+
+author:
+  name: Will
