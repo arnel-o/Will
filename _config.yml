@@ -1,7 +1,9 @@
 title: Will
 description: ""
-theme: minima
+remote_theme: jekyll/minima
 permalink: /:title/
+plugins:
+  - jekyll-remote-theme
 
 minima:
   skin: dark
