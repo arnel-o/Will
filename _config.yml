@@ -1,5 +1,7 @@
 title: Will
 description: ""
+url: "https://willai.blog"
+baseurl: ""
 permalink: /:title/
 markdown: kramdown
 
