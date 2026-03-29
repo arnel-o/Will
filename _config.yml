@@ -1,12 +1,7 @@
 title: Will
 description: ""
-remote_theme: jekyll/minima
 permalink: /:title/
-plugins:
-  - jekyll-remote-theme
-
-minima:
-  skin: dark
+markdown: kramdown
 
 author:
   name: Will
