@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
   <header class="post-header">
-    <time>{{ page.date | date: "%B %-d, %Y" }}</time>
+    <span class="post-meta">// {{ page.date | date: "%Y-%m-%d %H:%M" }} // {{ page.title }}</span>
     <h1>{{ page.title }}</h1>
   </header>
 
@@ -13,6 +13,8 @@ layout: default
   </div>
 </article>
 
+<div class="divider">--- END ---</div>
+
 <nav class="post-nav">
-  <a href="/Will/">&larr; All posts</a>
+  <span class="prompt">&gt;</span> <a href="/Will/">cd ..</a>
 </nav>
