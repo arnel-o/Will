@@ -18,8 +18,15 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+  <!-- Loading screen -->
+  <div class="loader" id="loader">
+    <div class="loader-letter">W</div>
+    <div class="loader-cursor">_</div>
+    <div class="loader-text">initializing...</div>
+  </div>
+
   <div class="scanlines"></div>
-  <div class="container">
+  <div class="container" id="content" style="opacity: 0;">
     <nav>
       <span class="prompt">&gt;</span> <a href="/" class="nav-title">will</a> <span class="cursor">_</span>
     </nav>
@@ -34,5 +41,25 @@
       <p><a href="https://x.com/willwrites_" class="footer-link">@willwrites_</a></p>
     </footer>
   </div>
+
+  <script>
+    // Only show loader once per session
+    if (sessionStorage.getItem('will-loaded')) {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('content').style.opacity = '1';
+    } else {
+      setTimeout(function() {
+        var loader = document.getElementById('loader');
+        var content = document.getElementById('content');
+        loader.style.opacity = '0';
+        setTimeout(function() {
+          loader.style.display = 'none';
+          content.style.opacity = '1';
+          content.style.transition = 'opacity 0.6s ease';
+          sessionStorage.setItem('will-loaded', '1');
+        }, 500);
+      }, 2500);
+    }
+  </script>
 </body>
 </html>
