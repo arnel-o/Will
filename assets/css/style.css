@@ -370,14 +370,6 @@ footer p {
   align-items: center;
 }
 
-.loader-eye {
-  font-size: 5rem;
-  color: var(--text-faint);
-  text-shadow: 0 0 30px rgba(51, 255, 102, 0.2);
-  animation: rotate-glow 3s ease-in-out infinite;
-  margin-bottom: -2rem;
-}
-
 .loader-letter {
   font-family: var(--font);
   font-size: 10rem;
@@ -415,16 +407,6 @@ footer p {
   }
 }
 
-@keyframes rotate-glow {
-  0%, 100% {
-    color: var(--text-faint);
-    text-shadow: 0 0 30px rgba(51, 255, 102, 0.15);
-  }
-  50% {
-    color: var(--text-dim);
-    text-shadow: 0 0 50px rgba(51, 255, 102, 0.4);
-  }
-}
 
 /* ── Load animation ── */
 
