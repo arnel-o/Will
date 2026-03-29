@@ -99,12 +99,15 @@ nav {
   padding: 3rem 0 2rem;
 }
 
-.ascii-header {
-  font-size: 0.75rem;
-  line-height: 1.3;
-  color: var(--text-dim);
-  margin-bottom: 1rem;
-  letter-spacing: 0.05em;
+.site-name {
+  font-family: var(--font);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--text-bright);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px var(--glow-strong);
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
